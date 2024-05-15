@@ -16,7 +16,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl font-bold">GREENDEN</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -35,6 +35,28 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         </ul>
 
     </nav>
+
+    
+    <!--side navbar-->
+
+<section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+
+    <div class="text-right p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+
+    </div>
+    <ul class="flex  flex-col gap-10 items-center text-gray-600">
+        <li>
+            <a class="hover:underline hover:text-black" href="index.html">Home</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="product.html">Products</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+        </li>
+    </ul>
+</section>
 <!--contact-->
 
     <section class="bg-white dark:bg-gray-900">
@@ -68,6 +90,8 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <p>The standard chunk of lorem ispum used since the 500s is reproduced below for those intrest</p>
         <p>&copy;Greenday.com</p>
     </section>
+
+    <script src="contact.js"></script>
 </body>
 
 </html>
